@@ -14,3 +14,4 @@ int main(void)
 	printf("Size of double: %zu byte(s)\n", sizeof(double));
 	return (0);
 }
+
