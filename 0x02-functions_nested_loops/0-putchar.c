@@ -1,18 +1,15 @@
 #include <stdio.h>
 #include <main.h>
-/* a program that prints
+/**
+ *main - writes the character c to stdout
+ * @c: The character to print
  *
- * _putchar
- *
- * followed by a new line
- *
- * always return (0)
- *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 
-char main(void)
+int main()
 
 {
-	putchar('_putchar\n');
-	return(0);
+	putchar(_outchar);
 }
