@@ -6,11 +6,15 @@
 */
 
 int main(void)
-{
-	int i;
 
-	i = 0;
-	positive_or_negative(i);
-	_putchar('\n');
-	return (0);
+{
+
+int i;
+
+i = 0;
+
+positive_or_negative(i);
+
+return (0);
+
 }
