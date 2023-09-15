@@ -7,17 +7,38 @@
  */
 
 void print_square(int size)
+
 {
+
 	if (size <= 0)
+
 	{
-		_putchar("\n")
-	}
-	for (int i = 1; i <= size; i++)
+
+		_putchar('\n');
+
+	} else
+
 	{
-		for (int j = 1; j <= size; j++)
+
+		int i, j;
+
+
+		for (i = 0; i < size; i++)
+
 		{
-			_putchar('#');
+
+			for (j = 0; j < size; j++)
+
+			{
+
+				_putchar('#');
+
+			}
+
+			_putchar('\n');
+
 		}
-		_putchar("\n");
+
 	}
+
 }
