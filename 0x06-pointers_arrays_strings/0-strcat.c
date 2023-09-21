@@ -2,11 +2,12 @@
 
 /**
  * _strcat -  concatenates two strings
- * 
- * Return 0
+ * @dest: is a parameter
+ * @src: is a parameter
+ * Return: _strcat
  */
 char *_strcat(char *dest, char *src)
 {
 	_putchar(*dest + *src);
-	return (0);
+	return (_strcat);
 }
