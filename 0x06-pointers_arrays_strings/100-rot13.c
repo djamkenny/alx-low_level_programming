@@ -1,24 +1,43 @@
 #include "main.h"
 /**
  * rot13 - Capitalizes all words of a string.
- * @*: The string to be capitalized.
- * @str: parameters
+ * @s: The string to be capitalized.
  * Return: 0
  */
-char *rot13(char *str)
-{
-	if (str)
-	{
-	for (char *p = str; *p; ++p)
-	{
-	char c = *p;
+char *rot13(char *s)
 
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+{
+
+	int i;
+
+	int j;
+
+	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+	char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+
+	for (i = 0; s[i] != '\0'; i++)
+
 	{
-		char base = (c >= 'a' && c <= 'z') ? 'a' : 'A';
-		*p = ((c - base + 13) % 26) + base;
+
+		for (j = 0; j < 52; j++)
+
+		{
+
+			if (s[i] == data1[j])
+
+			{
+
+				s[i] = datarot[j];
+
+				break;
+
+			}
+
+		}
+
 	}
-	}
-	}
-	return (str);
+
+	return (s);
 }
