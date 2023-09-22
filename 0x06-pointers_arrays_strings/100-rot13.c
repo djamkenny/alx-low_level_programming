@@ -2,7 +2,7 @@
 /**
  * rot13 - Capitalizes all words of a string.
  * @*: The string to be capitalized.
- *
+ * @str: parameters
  * Return: 0
  */
 char *rot13(char *str)
@@ -20,5 +20,5 @@ char *rot13(char *str)
 	}
 	}
 	}
-	return str;
+	return (str);
 }
