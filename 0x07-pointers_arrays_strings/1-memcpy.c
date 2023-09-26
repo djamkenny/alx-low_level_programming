@@ -4,7 +4,7 @@
 * @dest: input
 * @src: input
 * @n: input
-* Return the original destination pointer
+* Return: the original destination pointer
 */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
