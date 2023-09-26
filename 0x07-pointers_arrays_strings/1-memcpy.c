@@ -3,16 +3,15 @@
  * _strchr - Entry point
  * @s: input
  * @c: input
- * Return: Always 0 (Success)
+ * Return original_dest
  */
 char *_strchr(char *s, char c)
 {
-	int i = 0;
+	char *original_dest = dest;
 
-	for (; s[i] >= '\0'; i++)
-{
-	if (s[i] == c)
-	return (&s[i]);
-}
-	return (0);
+	while (n--)
+	{
+		*dest++ = *src++;
+	}
+	return (original_dest);
 }
