@@ -1,11 +1,12 @@
 #include "main.h"
 /**
- * _strchr - Entry point
- * @s: input
- * @c: input
- * Return original_dest
- */
-char *_strchr(char *s, char c)
+* _memcpy - Entry point
+* @dest: input
+* @src: input
+* @n: input
+* Return the original destination pointer
+*/
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	char *original_dest = dest;
 
