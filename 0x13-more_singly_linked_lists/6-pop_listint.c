@@ -5,20 +5,18 @@
  * @head: parameter
  * Return: data
  */
-
 int pop_listint(listint_t **head)
 {
-	if (*head == NULL)
+	listint_t *temp;
+	int num;
+
+	if (!head || !*head)
 		return (0);
 
-	int data;
-	listint_t *temp;
+	num = (*head)->n;
+	temp = (*head)->next;
+	free(*head);
+	*head = temp;
 
-	data = (*head)->n;
-	temp = *head;
-	*head = (*head)->next;
-	free(temp);
-
-	return (data);
+	return (num);
 }
-
